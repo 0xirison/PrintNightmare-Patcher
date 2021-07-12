@@ -4,14 +4,14 @@ A patch for PrintNightmare vulnerability that occurs to print spooler service fo
 # Dependencies:
 No dependencies required
 
-# Does it need elevated privielges?
-yes, it needs
-
 # Features:
 - Check if the windows machine is vulnerable or not.
 - check if the Print Spooler service is running or not, and disable it if running.
 - check if the system has an update for PrinterNightmare vulnerability "Hotfix-id: KB5004954", and try it to install it if it is not already installed.
 - changing the registry key 'PointAndPrint' settings as Microsoft suggests.
+
+# Does it need elevated privielges?
+yes, it needs
 
 # References:
 - Windows Print Spooler Remote Code Execution Vulnerability by [Microsoft](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-34527)
