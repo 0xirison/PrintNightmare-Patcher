@@ -25,5 +25,5 @@ yes, it needs
 
 # Screenshot
 <p>
-<img src="https://pasteboard.co/KaRdWlT.png" width="220" height="240" />
+<img src="https://imgur.com/G2N3DYC" width="220" height="240" />
 </p>
