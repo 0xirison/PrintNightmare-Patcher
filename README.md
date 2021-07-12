@@ -24,5 +24,4 @@ yes, it needs
 - Windwos Security Update 'KB5004954' by [Microsoft](https://support.microsoft.com/en-us/topic/july-6-2021-kb5004954-monthly-rollup-out-of-band-8e7742b6-8a42-41ab-86dd-0dd0b36b4139)
 
 # Screenshot
-<img src="https://imgur.com/G2N3DYC" width="220" height="240" />
-
+[img]https://i.imgur.com/R4y55Ws.png[/img]
