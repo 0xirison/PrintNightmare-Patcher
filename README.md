@@ -5,10 +5,10 @@ A patch for PrintNightmare vulnerability that occurs to print spooler service fo
 No dependencies required
 
 # Features:
-- Check if the windows machine is vulnerable or not.
-- check if the Print Spooler service is running or not, and disable it if running.
-- check if the system has an update for PrinterNightmare vulnerability "Hotfix-id: KB5004954", and try it to install it if it is not already installed.
-- changing the registry key 'PointAndPrint' settings as Microsoft suggests.
+- Check if the windows system is vulnerable to PrinterNightmare or not.
+- Check if the Print Spooler service is running or not, and disable it if running.
+- Check if the system has an update for PrinterNightmare vulnerability "Hotfix-id: KB5004954", and try it to install it if it is not already installed.
+- Changing the registry key 'PointAndPrint' settings as Microsoft suggests.
 
 # Does it need elevated privielges?
 yes, it needs
