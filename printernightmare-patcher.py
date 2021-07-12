@@ -14,10 +14,10 @@ def is_system_vulnerable():
         if security_update.lower().find("hotfixid") >= 0:
             print("[+] PrinterNightmare Vulnerability Patch: KB5004945 update is already Installed")
             print("[+] This system is NOT vulnerable to PrinterNightmare")
-
             return False
     except:
         print("[!] PrinterNightmare Vulnerability Patch: KB5004945 update is NOT Installed!")
+        updating_system()
     try:
         access_registry_item = winreg.ConnectRegistry(None, winreg.HKEY_LOCAL_MACHINE)
         registry_key = winreg.OpenKey(access_registry_item, REG_PATH)
@@ -144,6 +144,5 @@ if __name__ == '__main__':
     is_spooler_running = is_spooler_running()
     if is_spooler_running:
         disable_printspooler()
-    if is_vulnerable:
-        updating_system()
+    if is_vulnerable or is_spooler_running:
         set_printer_reg()
