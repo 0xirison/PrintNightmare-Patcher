@@ -16,7 +16,7 @@ No dependencies required
 - Check if the system has an update for PrinterNightmare vulnerability "Hotfix-id: KB5004954", and try it to install it if it is not already installed.
 - Changing the registry key 'PointAndPrint' settings as Microsoft suggests.
 
-# Does it need elevated privielges?
+# Does it need elevated privileges?
 Yes, it needs
 
 # References
