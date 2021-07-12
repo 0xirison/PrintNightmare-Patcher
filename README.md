@@ -1,5 +1,5 @@
 # PrinterNightmare-Patcher
-This tool resolves the PrintNightmare vulnerability that occurs to print spooler service for Windows machines [CVE-2021-34527]. In addition, it checks if your system has the relevant security update for it or not.
+This tool resolves the PrintNightmare vulnerability that occurs to print spooler service for Windows machines [CVE-2021-34527]. In addition, it checks if your system has the relevant security update for it or not. 
 
 # Usage
 python printernightmare-patcher.py
@@ -17,7 +17,7 @@ No dependencies required
 - Changing the registry key 'PointAndPrint' settings as Microsoft suggests.
 
 # Does it need elevated privielges?
-yes, it needs
+Yes, it needs
 
 # References
 - Windows Print Spooler Remote Code Execution Vulnerability by [Microsoft](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-34527)
