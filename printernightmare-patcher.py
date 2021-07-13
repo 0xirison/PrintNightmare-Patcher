@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-#Patch for: CVE-2021-34527 'PrinterNightmare'
+#Patch for: CVE-2021-34527 'PrintNightmare'
 #Dev-Date: 12-07-2021
 import platform, winreg, subprocess, os, ctypes
 
@@ -7,16 +7,16 @@ import platform, winreg, subprocess, os, ctypes
 def is_system_vulnerable():
     system = (platform.system() + " " + platform.release()).lower()
     if system.find("windows") < 0:
-        print("[+] This system is NOT vulnerable to PrinterNightmare")
+        print("[+] This system is NOT vulnerable to PrintNightmare")
         return False
     try:
         security_update = subprocess.check_output('powershell.exe Get-Hotfix KB5004954', shell=True).decode("UTF-8")
         if security_update.lower().find("hotfixid") >= 0:
-            print("[+] PrinterNightmare Vulnerability Patch: KB5004945 update is already Installed")
-            print("[+] This system is NOT vulnerable to PrinterNightmare")
+            print("[+] PrintNightmare Vulnerability Patch: KB5004945 update is already Installed")
+            print("[+] This system is NOT vulnerable to PrintNightmare")
             return False
     except:
-        print("[!] PrinterNightmare Vulnerability Patch: KB5004945 update is NOT Installed!")
+        print("[!] PrintNightmare Vulnerability Patch: KB5004945 update is NOT Installed!")
         updating_system()
     try:
         access_registry_item = winreg.ConnectRegistry(None, winreg.HKEY_LOCAL_MACHINE)
@@ -24,11 +24,11 @@ def is_system_vulnerable():
         access_key_handler = int(registry_key)
         winreg.CloseKey(registry_key)
         if access_key_handler >= 0:
-            print("[!] This system is Vulnerable to PrinterNightmare")
+            print("[!] This system is Vulnerable to PrintNightmare")
             return True
     except FileNotFoundError:
         print("[+] PointAndPrint Registry key does NOT exist")
-        print("[+] This system is NOT vulnerable to PrinterNightmare")
+        print("[+] This system is NOT vulnerable to PrintNightmare")
         return False
 
 
@@ -125,7 +125,7 @@ def banner():
 |_|  <___| |_| \_|_.|_|_|\___.|_|  
 
 ==========================
-PrinterNightmare Patcher v1.0
+PrintNightmare Patcher v1.0
 Author: irison
 GitHub: https://github.com/0xirison
 *._.* __ _ ._ 
