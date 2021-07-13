@@ -5,15 +5,15 @@ This tool resolves the PrintNightmare vulnerability that occurs to print spooler
 python printernightmare-patcher.py
 
 # Installation
-git clone https://github.com/0xIrison/PrinterNightmare-Patcher.git
+git clone https://github.com/0xIrison/PrintNightmare-Patcher.git
 
 # Dependencies
 No dependencies required
 
 # Features
-- Check if the windows system is vulnerable to PrinterNightmare or not.
+- Check if the windows system is vulnerable to PrintNightmare or not.
 - Check if the Print Spooler service is running or not, and disable it if running.
-- Check if the system has an update for PrinterNightmare vulnerability "Hotfix-id: KB5004954", and try it to install it if it is not already installed.
+- Check if the system has an update for PrintNightmare vulnerability "Hotfix-id: KB5004954", and try it to install it if it is not already installed.
 - Changing the registry key 'PointAndPrint' settings as Microsoft suggests.
 
 # Does it need elevated privileges?
