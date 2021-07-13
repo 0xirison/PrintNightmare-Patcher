@@ -3,11 +3,14 @@
 #Dev-Date: 12-07-2021
 import platform, winreg, subprocess, os, ctypes
 
+REG_PATH = r'SOFTWARE\Policies\Microsoft\Windows NT\Printers\PointAndPrint'
+
 
 def is_system_vulnerable():
     system = (platform.system() + " " + platform.release()).lower()
     if system.find("windows") < 0:
         print("[+] This system is NOT vulnerable to PrintNightmare")
+        exit(0)
         return False
     try:
         security_update = subprocess.check_output('powershell.exe Get-Hotfix KB5004954', shell=True).decode("UTF-8")
@@ -46,6 +49,7 @@ def updating_system():
 
     except:
         print("[-] Powershell version could NOT be identified")
+        print("[!] I could not install the security update {KB5004945}, please install it manually") 
 
 
 def is_spooler_running():
@@ -134,7 +138,6 @@ GitHub: https://github.com/0xirison
     ''')
 
 if __name__ == '__main__':
-    REG_PATH = r'SOFTWARE\Policies\Microsoft\Windows NT\Printers\PointAndPrint'
     banner()
     amiadmin = check_admin_priv()
     if not amiadmin:
