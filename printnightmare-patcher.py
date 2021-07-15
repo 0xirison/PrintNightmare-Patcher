@@ -38,7 +38,7 @@ def is_system_vulnerable():
 def updating_system():
     try:
         PS_version = int(subprocess.check_output('powershell.exe $PSVersionTable.PSVersion.major', shell=True).decode("UTF-8"))
-        if PS_version > 4:
+        if PS_version >= 3:
             print("[+] Trying to install the patch ...")
             try:
                 subprocess.check_output('powershell.exe Get-WindowsUpdate -Install -KBArticleID "KB5004945"', shell=True).decode("UTF-8")
@@ -46,7 +46,8 @@ def updating_system():
             except:
                 print("[-] Powershell could not recognize Get-WindowsUpdate, Patch is NOT installed")
                 print("[!] Please install the security update {KB5004945} manually ")
-
+        else:
+            print("[!] Current Powershell Version does not support PSWindowsUpdate, please install the security update {KB5004945} manually")
     except:
         print("[-] Powershell version could NOT be identified")
         print("[!] I could not install the security update {KB5004945}, please install it manually") 
