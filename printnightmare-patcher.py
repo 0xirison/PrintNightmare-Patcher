@@ -44,7 +44,7 @@ def updating_system():
                 subprocess.check_output('powershell.exe Get-WindowsUpdate -Install -KBArticleID "KB5004945"', shell=True).decode("UTF-8")
                 print("[+] Patch is installed successfully")
             except:
-                print("[-] Powershell could not recognize Get-WindowsUpdate, Patch is NOT installed")
+                print("[-] Powershell could not recognize Get-WindowsUpdate, Patch is NOT installed!")
                 print("[!] Please install the security update {KB5004945} manually ")
         else:
             print("[!] Current Powershell Version does not support PSWindowsUpdate, please install the security update {KB5004945} manually")
