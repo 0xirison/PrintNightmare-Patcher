@@ -17,7 +17,7 @@ No dependencies required
 - Changing the registry key 'PointAndPrint' settings as Microsoft suggests.
 
 # Does it require elevated privileges?
-Yes, it needs
+Yes, it requires administrative privileges
 
 # References
 - Windows Print Spooler Remote Code Execution Vulnerability by [Microsoft](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-34527)
