@@ -1,4 +1,4 @@
-# PrintNightmare-Patcher
+# Introduction
 This tool resolves the PrintNightmare vulnerability that occurs to print spooler service for Windows machines [CVE-2021-34527]. In addition, it checks if your system has the relevant security update for it or not. 
 
 # Installation
