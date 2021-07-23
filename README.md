@@ -3,7 +3,7 @@ PrintNightmare-Patcher, a simple tool that resolves the PrintNightmare vulnerabi
 
 # Installation
 ```
-git clone https://github.com/0xIrison/PrintNightmare-Patcher.git
+git clone https://github.com/0xirison/PrintNightmare-Patcher.git
 ```
 
 # Usage
